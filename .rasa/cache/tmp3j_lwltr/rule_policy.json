@@ -1,0 +1,31 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_competitions_by_location\"}}]": "utter_ask_competitions_by_location",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_competitions_by_location\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_competitions_by_location\"}, \"user\": {\"intent\": \"get_competitions_by_location\"}}]": "action_get_competitions_by_location",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_competitions_by_location\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_competitions_by_location\"}, \"user\": {\"intent\": \"get_competitions_by_location\"}}, {\"prev_action\": {\"action_name\": \"action_get_competitions_by_location\"}, \"user\": {\"intent\": \"get_competitions_by_location\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mood_great\"}}]": "utter_greet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mood_great\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"mood_great\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_competitions_by_date\"}}]": "utter_ask_competitions_by_date",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_competitions_by_date\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_competitions_by_date\"}, \"user\": {\"intent\": \"get_competitions_by_date\"}}]": "action_get_competitions_by_date",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_competitions_by_date\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_competitions_by_date\"}, \"user\": {\"intent\": \"get_competitions_by_date\"}}, {\"prev_action\": {\"action_name\": \"action_get_competitions_by_date\"}, \"user\": {\"intent\": \"get_competitions_by_date\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_competition_info\"}}]": "action_get_competition_info",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_competition_info\"}}, {\"prev_action\": {\"action_name\": \"action_get_competition_info\"}, \"user\": {\"intent\": \"get_competition_info\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_competitions_by_country\"}}]": "utter_ask_competitions_by_country",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_competitions_by_country\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_competitions_by_country\"}, \"user\": {\"intent\": \"get_competitions_by_country\"}}]": "action_get_competitions_by_country",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_competitions_by_country\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_competitions_by_country\"}, \"user\": {\"intent\": \"get_competitions_by_country\"}}, {\"prev_action\": {\"action_name\": \"action_get_competitions_by_country\"}, \"user\": {\"intent\": \"get_competitions_by_country\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent restart",
+      "predicting default action with intent session_start",
+      "predicting default action with intent back"
+    ]
+  }
+}

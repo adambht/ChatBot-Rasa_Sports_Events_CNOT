@@ -1,0 +1,56 @@
+version: "3.1"
+
+rules:
+  - rule: Greet the user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Goodbye user
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Ask for competition info if not already provided
+    steps:
+      - intent: get_competition_info
+      - action: utter_ask_competition_info
+      - action: action_get_competition_info
+
+  - rule: Ask competition date (follow-up)
+    steps:
+      - intent: get_competition_date
+      - action: action_get_competition_date  # Fetch the date of the remembered competition
+
+  - rule: Ask competition location (follow-up)
+    steps:
+      - intent: get_competition_location
+      - action: action_get_competition_location  # Fetch the location of the remembered competition
+
+  - rule: Ask competition country (follow-up)
+    steps:
+      - intent: get_competition_country
+      - action: action_get_competition_country  # Fetch the country of the remembered competition
+
+  - rule: Ask competitions by date
+    steps:
+      - intent: get_competitions_by_date
+      - action: utter_ask_competitions_by_date
+      - action: action_get_competitions_by_date
+
+  - rule: Ask competitions by location
+    steps:
+      - intent: get_competitions_by_location
+      - action: utter_ask_competitions_by_location
+      - action: action_get_competitions_by_location
+
+  - rule: Ask competitions by country
+    steps:
+      - intent: get_competitions_by_country
+      - action: utter_ask_competitions_by_country
+      - action: action_get_competitions_by_country
+
+  - rule: Mood great response
+    steps:
+      - intent: mood_great
+      - action: utter_greet  # or another relevant response

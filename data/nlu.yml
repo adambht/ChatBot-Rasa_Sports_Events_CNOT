@@ -1,0 +1,147 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - hey dude
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - extremely good
+    - so good
+    - so perfect
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+# Sports-related intents
+
+- intent: get_competition_info
+  examples: |
+    - Tell me about the [Olympic Games Paris](competition_name).
+    - What is the [World Aquatics Masters Championships](competition_name) about?
+    - Can you provide details on the [Tell me about the Olympic Gam](competition_name)?
+    - Tell me more about the [New Balance KÖ MEILE](competition_name).
+    - Give me information on the [Powakacyjny mityng LA w Oleśnicy](competition_name).
+    - Tell me more about the [Mityng LA w Opolu](competition_name).
+    - What are the specifics of the [2nd Santa Maria Marathon](competition_name)?
+    - Can you share details on the [Festival UCA Novos Talentos - 2nd Stage](competition_name)?
+    - What can you tell me about the [Big Half](competition_name)?
+    - Tell me about the [KZNA SYYJSM League 1](competition_name).
+    - What details do you have on the [Belgian U16 Outdoor Championships](competition_name)?
+    - Can you provide information on the [Australian Cross Country Championships](competition_name)?
+    - What is the [Falu sommarspel](competition_name) about?
+    - Tell me more about the [Campeonato Estadual de Atletismo](competition_name).
+    - What can you share regarding the [Grand Prix International de Monthey - Mémorial Raymond Girod](competition_name)?
+
+- intent: get_competition_date
+  examples: |
+    - In which date?
+    - What date is it?
+    - When is it happening?
+    - Can you tell me the date of the event?
+    - When is the competition?
+    - On which date will it happen?
+
+- intent: get_competition_location
+  examples: |
+    - Where is it taking place?
+    - Where is the competition?
+    - In which location is the event happening?
+    - Where is the event happening?
+    - What’s the location of the event?
+    - Can you tell me where it will be held?
+
+- intent: get_competition_country
+  examples: |
+    - In which country is it happening?
+    - Where is the competition being held?
+    - What country is the event in?
+    - Which country will host it?
+    - Where will it take place?
+
+- intent: get_competitions_by_date
+  examples: |
+    - What competitions are on [26/07/2024](date)?
+    - Show me events on [01/09/2024](date).
+    - Can you list the competitions scheduled for [23/02/2024](date)?
+    - What events are happening on [02/02/2024](date)?
+    - Are there any competitions on [31/08/2024](date)?
+    - Tell me about the events taking place on [01/09/2024](date).
+    - What competitions are lined up for [31/08/2024](date)?
+    - Show me the events happening on [31/08/2024](date).
+    - Can you provide details for competitions on [01/09/2024](date)?
+    - What events are there on [26/07/2024](date)?
+
+- intent: get_competitions_by_location
+  examples: |
+    - Are there any competitions in [Doha](location)?
+    - List events in [Düsseldorf](location).
+    - What competitions are happening in [Paris](location)?
+    - Show me events in [Oleśnica](location).
+    - Can you tell me about competitions in [Santa Maria](location)?
+    - What events are scheduled in [London](location)?
+    - Are there any competitions in [Durban](location)?
+    - List the events happening in [Nivelles](location).
+    - What competitions are taking place in [Lausanne](location)?
+    - Can you provide details for events in [Bolzano](location)?
+
+- intent: get_competitions_by_country
+  examples: |
+    - What competitions are happening in [France](country)?
+    - Are there any events in [Brazil](country)?
+    - Can you list competitions in [Qatar](country)?
+    - What events are scheduled in [Germany](country)?
+    - Show me competitions taking place in [Poland](country).
+    - Are there any sports events in [South Africa](country)?
+    - What competitions can I find in [Hungary](country)?
+    - List the events happening in [Belgium](country).
+    - What competitions are in [Italy](country)?
+    - Can you tell me about events in [Australia](country)?

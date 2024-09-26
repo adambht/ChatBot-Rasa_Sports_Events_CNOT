@@ -1,0 +1,84 @@
+version: "3.1"
+
+# Intents
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - bot_challenge
+  - get_competition_info
+  - get_competition_date  # Added to handle date-specific follow-up queries
+  - get_competition_location  # Added to handle location-specific follow-up queries
+  - get_competition_country  # Added to handle country-specific follow-up queries
+  - get_competitions_by_date
+  - get_competitions_by_location
+  - get_competitions_by_country
+
+# Entities
+entities:
+  - date
+  - location
+  - country
+  - competition_name
+
+# Slots
+slots:
+  date:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: date
+  location:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: location
+  country:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: country
+  competition_name:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: competition_name
+
+# Responses
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+  utter_ask_competition_info:
+    - text: "What competition are you interested in?"
+  utter_ask_competitions_by_date:
+    - text: "Please provide the date for the competitions."
+  utter_ask_competitions_by_location:
+    - text: "Which location are you asking about?"
+  utter_ask_competitions_by_country:
+    - text: "Which country are you interested in?"
+  utter_ask_competition_date:
+    - text: "In which date is the event happening?"
+  utter_ask_competition_location:
+    - text: "In which location is the event happening?"
+  utter_ask_competition_country:
+    - text: "In which country is the event happening?"
+  utter_default:
+    - text: "I'm sorry, I didn't understand that. Can you please rephrase?"
+
+# Actions
+actions:
+  - action_get_competition_info
+  - action_get_competitions_by_date
+  - action_get_competitions_by_location
+  - action_get_competitions_by_country
+  - action_get_competition_date  # Added to fetch the date of the current competition
+  - action_get_competition_location  # Added to fetch the location of the current competition
+  - action_get_competition_country  # Added to fetch the country of the current competition
