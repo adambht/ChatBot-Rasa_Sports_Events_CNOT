@@ -65,9 +65,10 @@ nlu:
 
 - intent: get_competition_info
   examples: |
+    - [Olympic Games Paris](competition_name).
     - Tell me about the [Olympic Games Paris](competition_name).
     - What is the [World Aquatics Masters Championships](competition_name) about?
-    - Can you provide details on the [Tell me about the Olympic Gam](competition_name)?
+    - Can you provide details on the [Olympic Gam](competition_name)?
     - Tell me more about the [New Balance KÖ MEILE](competition_name).
     - Give me information on the [Powakacyjny mityng LA w Oleśnicy](competition_name).
     - Tell me more about the [Mityng LA w Opolu](competition_name).
@@ -109,6 +110,7 @@ nlu:
 
 - intent: get_competitions_by_date
   examples: |
+    - [26/07/2024](date)?
     - What competitions are on [26/07/2024](date)?
     - Show me events on [01/09/2024](date).
     - Can you list the competitions scheduled for [23/02/2024](date)?
@@ -122,6 +124,7 @@ nlu:
 
 - intent: get_competitions_by_location
   examples: |
+    - [Doha](location)?
     - Are there any competitions in [Doha](location)?
     - List events in [Düsseldorf](location).
     - What competitions are happening in [Paris](location)?
@@ -135,6 +138,7 @@ nlu:
 
 - intent: get_competitions_by_country
   examples: |
+    - [France](country)?
     - What competitions are happening in [France](country)?
     - Are there any events in [Brazil](country)?
     - Can you list competitions in [Qatar](country)?

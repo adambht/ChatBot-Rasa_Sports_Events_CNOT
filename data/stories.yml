@@ -14,7 +14,7 @@ stories:
   - story: ask for competition info
     steps:
       - intent: get_competition_info
-      - action: utter_ask_competition_info
+      #- action: utter_ask_competition_info
       - action: action_get_competition_info  # Custom action to fetch info
 
   - story: ask for competition date
@@ -35,19 +35,19 @@ stories:
   - story: ask competitions by date
     steps:
       - intent: get_competitions_by_date
-      - action: utter_ask_competitions_by_date
+    #  - action: utter_ask_competitions_by_date
       - action: action_get_competitions_by_date  # Custom action to fetch events
 
   - story: ask competitions by location
     steps:
       - intent: get_competitions_by_location
-      - action: utter_ask_competitions_by_location
+    #  - action: utter_ask_competitions_by_location
       - action: action_get_competitions_by_location  # Custom action to fetch events
 
   - story: ask competitions by country
     steps:
       - intent: get_competitions_by_country
-      - action: utter_ask_competitions_by_country
+    #  - action: utter_ask_competitions_by_country
       - action: action_get_competitions_by_country  # Custom action to fetch events
 
   - story: mood great

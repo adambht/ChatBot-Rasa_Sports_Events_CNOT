@@ -50,6 +50,9 @@ slots:
       - type: from_entity
         entity: competition_name
 
+
+
+
 # Responses
 responses:
   utter_greet:

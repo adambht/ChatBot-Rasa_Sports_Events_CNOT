@@ -1,0 +1,82 @@
+Test : 
+1- hello 
+2- Give me information on the bardo gp
+3- Are there any events in Brazil
+4- What are the specifics of the Campeonato Estadual de Atletismo 
+5- when ?
+6- 26/07/2024
+7- Can you provide information on the Olympic Gam
+8- where
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+test:
+0- hello
+1- tell me about
+2- tell me about none
+3- brazil
+4- Show me events on 01/09/2024
+5- doha
+6- What is the World Aquatics Masters
+7- where ?
+9- France ?
+10- 26/07/2024
+12-  Can you provide information on the Olympic Games Pari
+13- when
+14- where
+
+
+
+
+
+
+
+
+
+Scrapping : 
+1- en7el page bel webdriver 
+2- fama akal cookies demande (wait 10)
+3- wait 5
+4- check el table content mawjoud
+5- rows = el rows bel tag tr
+6- for each row , extracti bel cellule bel cellule wo en7otha fi des variables 
+7- list data en7ot feha des dictionnaire eli fihom les 6 variables
+8- emba3ed ensaker el webdrive
+9- en7ot el data liste fi dataframe 
+10- create the .excel and .yaml 
+11- dump the df to the two files and close the program
+
+
+
+
+
+why we need this :  def name(self) -> Text:
+    return "action_get_competition_info"
+

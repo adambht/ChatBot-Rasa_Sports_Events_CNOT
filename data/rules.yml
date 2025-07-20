@@ -14,7 +14,7 @@ rules:
   - rule: Ask for competition info if not already provided
     steps:
       - intent: get_competition_info
-      - action: utter_ask_competition_info
+    #  - action: utter_ask_competition_info
       - action: action_get_competition_info
 
   - rule: Ask competition date (follow-up)
@@ -35,19 +35,19 @@ rules:
   - rule: Ask competitions by date
     steps:
       - intent: get_competitions_by_date
-      - action: utter_ask_competitions_by_date
+    #  - action: utter_ask_competitions_by_date
       - action: action_get_competitions_by_date
 
   - rule: Ask competitions by location
     steps:
       - intent: get_competitions_by_location
-      - action: utter_ask_competitions_by_location
+    #  - action: utter_ask_competitions_by_location
       - action: action_get_competitions_by_location
 
   - rule: Ask competitions by country
     steps:
       - intent: get_competitions_by_country
-      - action: utter_ask_competitions_by_country
+    #  - action: utter_ask_competitions_by_country
       - action: action_get_competitions_by_country
 
   - rule: Mood great response
